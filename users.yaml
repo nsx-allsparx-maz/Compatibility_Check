@@ -4,7 +4,7 @@ info:
   title: User Service
   version: 1.0.35
 paths:
-  /users:
+  /users1:
     post:
       requestBody:
         content:
@@ -32,7 +32,7 @@ paths:
       parameters:
         - name: userId
           in: path
-          required: true
+          required: false
           schema:
             type: string
       responses:
@@ -55,8 +55,8 @@ security:
     - write:customer
     - read:customer
 servers:
-- url: https://staging.gigantic-server.com/v1
-  description: Staging server
+- url: https://staging.gigantic-server.com/v1/v2
+  description: Staging server test
 - url: https://api.gigantic-server.com/v1
   description: Production server
 tags:
