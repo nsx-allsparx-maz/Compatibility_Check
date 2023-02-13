@@ -2,7 +2,7 @@
 openapi: 3.0.1
 info:
   title: User Service
-  version: 1.0.34658746
+  version: 1.0.35
 paths:
   /users:
     post:
