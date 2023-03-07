@@ -1,8 +1,8 @@
 
-openapi: 3.0.1
+openapi: 3.0.2
 info:
   title: User Service
-  version: 1.0.91
+  version: 1.0.2
 paths:
   /users:
     post:
@@ -28,7 +28,7 @@ paths:
                   - id
                 type: object
   /users/{userId}/fghgefhw:
-    get:
+    post:
       parameters:
         - name: userId
           in: path
